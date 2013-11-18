@@ -1,4 +1,10 @@
-" Vundle
+" For new machines:
+" 1) Clone .vim/ repo
+" 2) ln -s ~/.vim/vimrc ~/.vimrc
+" 3) git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+" 4) in vim type EX command :BundleInstall
+"
+" Vundle necessaries
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -12,10 +18,10 @@ Bundle 'tpope/vim-commentary'
 Bundle 'vim-jp/cpp-vim'
 
 " Configuration
-"if $TERM == "xterm-256color" || $TERM == "screen-256color"
-"  set t_Co=256
-"endif
-set t_Co=8
+if $TERM == "xterm-256color" || $TERM == "screen-256color"
+  set t_Co=256
+endif
+" set t_Co=8
 
 set bg=dark
 set laststatus=2
