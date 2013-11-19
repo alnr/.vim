@@ -21,7 +21,6 @@ Bundle 'vim-jp/cpp-vim'
 if $TERM == "xterm-256color" || $TERM == "screen-256color"
   set t_Co=256
 endif
-" set t_Co=8
 
 set bg=dark
 set laststatus=2
@@ -50,6 +49,9 @@ set matchpairs=(:),{:},[:],<:>
 " set textwidth=80
 " set colorcolumn=+1
 
+" Some much-needed bugfixes
+" Fix backspace
+set backspace=indent,eol,start
 " Make Y act like the other capital letters
 nnoremap Y y$
 " Play back macro in q with Q
