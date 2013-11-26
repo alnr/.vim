@@ -1,5 +1,5 @@
 " For new machines:
-" 1) Clone .vim/ repo
+" 1) mkdir -p ~/.vim/bundle && git clone git@github.com:alnr/.vim.git ~/.vim
 " 2) ln -s ~/.vim/vimrc ~/.vimrc
 " 3) git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 " 4) in vim type EX command :BundleInstall
