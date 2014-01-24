@@ -34,6 +34,7 @@ endif
 
 syntax on
 filetype plugin indent on
+set nowrap
 set incsearch
 set ignorecase
 set smartcase
