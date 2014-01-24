@@ -78,3 +78,8 @@ nmap <C-b> :bprev<CR>
 nmap , :CtrlPBuffer<CR>
 "let g:ctrlp_map = '<c-p>'
 "let g:ctrlp_cmd = 'CtrlP'
+
+" Toggle cursor line highlighting
+hi CursorLine   cterm=NONE ctermbg=lightblue ctermfg=white guibg=lightblue guifg=white
+hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+nnoremap <Leader>c :set cursorline! <CR>
