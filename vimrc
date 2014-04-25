@@ -16,6 +16,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-commentary'
 Bundle 'vim-jp/cpp-vim'
+Bundle 'scrooloose/syntastic'
 Bundle 'TyeMcQueen/vim-merge-windows'
 source ~/.vim/bundle/vim-merge-windows/patience-diff.vim
 
