@@ -109,3 +109,18 @@ nnoremap <silent> <expr> k ScreenMovement("k")
 nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
+
+
+" \w toggles tailing whitespace highlighting
+:highlight RED ctermbg=red guibg=red
+nnoremap \w :call FindExtraWhitespaceToggle()<CR>
+let g:ExtraWhiteSpaceMatch = 0
+function! FindExtraWhitespaceToggle()
+    if g:ExtraWhiteSpaceMatch
+        let g:ExtraWhiteSpaceMatch = 0
+        :match
+    else
+        let g:ExtraWhiteSpaceMatch = 1
+        :match RED /\s\+$/
+    endif
+endfunction
