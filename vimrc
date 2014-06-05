@@ -81,6 +81,30 @@ nmap , :CtrlPBuffer<CR>
 "let g:ctrlp_map = '<c-p>'
 "let g:ctrlp_cmd = 'CtrlP'
 
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
+" update current tag highlight in tagbar more rapidly
+set updatetime=100    " default is 4000
+
+" list local variables in tagbar
+" let g:tagbar_type_cpp = {
+"     \ 'kinds' : [
+"         \ 'd:macros:1',
+"         \ 'g:enums',
+"         \ 't:typedefs:0:0',
+"         \ 'e:enumerators:0:0',
+"         \ 'n:namespaces',
+"         \ 'c:classes',
+"         \ 's:structs',
+"         \ 'u:unions',
+"         \ 'f:functions',
+"         \ 'm:members:0:0',
+"         \ 'v:global:0:0',
+"         \ 'x:external:0:0',
+"         \ 'l:local:0:0'
+"     \ ]
+" \ }
+
 " Toggle cursor line highlighting
 hi CursorLine   cterm=NONE ctermbg=lightblue ctermfg=white guibg=lightblue guifg=white
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
