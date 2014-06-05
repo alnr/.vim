@@ -18,6 +18,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'vim-jp/cpp-vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'TyeMcQueen/vim-merge-windows'
+Bundle 'majutsushi/tagbar'
 source ~/.vim/bundle/vim-merge-windows/patience-diff.vim
 
 " Configuration
