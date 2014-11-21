@@ -21,6 +21,11 @@ Bundle 'TyeMcQueen/vim-merge-windows'
 Bundle 'majutsushi/tagbar'
 source ~/.vim/bundle/vim-merge-windows/patience-diff.vim
 
+
+" Syntastic C++11
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
+
 " Configuration
 if $TERM == "xterm-256color" || $TERM == "screen-256color"
   set t_Co=256
