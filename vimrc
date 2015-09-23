@@ -42,9 +42,10 @@ endif
 syntax on
 filetype plugin indent on
 set nowrap
-set incsearch
+set noincsearch
 set ignorecase
 set smartcase
+set fdo-=search " don't open folds when searching
 set hlsearch
 set nowrapscan
 set noautoindent
