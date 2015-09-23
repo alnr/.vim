@@ -112,9 +112,10 @@ set updatetime=100    " default is 4000
 " \ }
 
 " Toggle cursor line highlighting
-hi CursorLine   cterm=NONE ctermbg=lightblue ctermfg=white guibg=lightblue guifg=white
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 nnoremap <Leader>c :set cursorline! <CR>
+nnoremap <Leader>C :set cursorcolumn! <CR>
 
 " switch panes with CTRL+{HJKL}
 nnoremap <C-J> <C-W>j
