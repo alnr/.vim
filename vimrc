@@ -19,8 +19,11 @@ Bundle 'vim-jp/cpp-vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'TyeMcQueen/vim-merge-windows'
 Bundle 'majutsushi/tagbar'
+Bundle 'vim-scripts/diffchar.vim'
 source ~/.vim/bundle/vim-merge-windows/patience-diff.vim
 
+" DiffChar colors
+let g:DiffColors=16
 
 " Syntastic C++11
 let g:syntastic_cpp_compiler = 'clang++'
